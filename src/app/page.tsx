@@ -4,8 +4,8 @@ import Profile from "@/components/landing-page/profile";
 
 export default function Page() {
 	return (
-		<div className="relative flex h-full w-full flex-col overflow-hidden rounded-lg">
-			<section className="grid grid-cols-12 gap-2 py-10">
+		<div className="relative flex h-full w-full flex-col overflow-hidden rounded-lg ">
+			<section className="grid grid-cols-12 gap-2 py-8 px-4 md:px-0 md:py-10">
 				<div className="col-span-12">
 					<Header />
 				</div>

@@ -9,8 +9,8 @@ const TechStackBadges = () => {
 					{[
 						"JavaScript",
 						"TypeScript",
-						"React",
-						"Next.js",
+						"ReactJS",
+						"NextJS",
 						"Tailwind CSS",
 						"Shadcn",
 						"MagicUI",
@@ -32,9 +32,9 @@ const TechStackBadges = () => {
 				</div>
 			</div>
 			<div className="space-y-2">
-				<h3 className="text-sm">DevOps & Cloud</h3>
+				<h3 className="text-sm">DevOps & Cloud / Tools</h3>
 				<div className="flex flex-wrap gap-2">
-					{["GCP", "AWS"].map((tech) => (
+					{["GCP", "AWS", "Version Control / Git", "Docker"].map((tech) => (
 						<Badge key={tech} variant="secondary" className=" text-xs">
 							{tech}
 						</Badge>
