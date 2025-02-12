@@ -7,7 +7,6 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { div } from "motion/react-client";
 
 export function About() {
 	return (
