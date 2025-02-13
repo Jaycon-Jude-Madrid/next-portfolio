@@ -1,8 +1,8 @@
 import { ThemeProvider } from "@/provider/theme-provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
-
 const geistSans = Geist({
 	variable: "--font-geist-sans",
 	subsets: ["latin"],
@@ -25,6 +25,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<Head>
+				<link rel="icon" href="/favicon.ico" />
+				{/* You can add more meta tags here if needed */}
+			</Head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased container mx-auto max-w-4xl`}
 			>
