@@ -112,7 +112,7 @@ export default function Profile() {
 									{
 										role: "Front-end Engineer",
 										company: "EIOR Technologies",
-										year: "2024",
+										year: "2024-2025",
 										location: "Remote",
 									},
 									{
