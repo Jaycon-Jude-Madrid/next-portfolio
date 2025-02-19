@@ -9,9 +9,6 @@ RUN npm install
 
 COPY . .
 
-# Copy the .env file
-COPY .env .env
-
 RUN npm run build
 
 EXPOSE 3000
