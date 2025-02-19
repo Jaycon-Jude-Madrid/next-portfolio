@@ -1,4 +1,5 @@
 "use client";
+import ChatBot from "@/components/landing-page/chat-bot/chat-bot";
 import { Header } from "@/components/landing-page/header";
 import Profile from "@/components/landing-page/profile";
 
@@ -21,6 +22,8 @@ export default function Page() {
       "absolute inset-0 w-full h-full"
     )}
     /> */}
+
+			<ChatBot />
 		</div>
 	);
 }

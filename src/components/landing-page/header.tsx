@@ -1,7 +1,15 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { Github, Instagram, Linkedin, MapPin, Moon, Sun } from "lucide-react";
+import {
+	Github,
+	Instagram,
+	Linkedin,
+	Mail,
+	MapPin,
+	Moon,
+	Sun,
+} from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { TextAnimate } from "../magicui/text-animate";
@@ -27,11 +35,11 @@ export function Header() {
 			icon: <Instagram className="h-4 w-4" />,
 			link: "https://www.instagram.com/iskadoush__",
 		},
+		{
+			icon: <Mail className="h-4 w-4" />,
+			link: "mailto:jaycon46madrid@gmail.com", // Replace with your email address
+		},
 	];
-
-	const handleActionClick = (link: string) => {
-		window.open(link, "_blank");
-	};
 
 	return (
 		<div className="w-full p-4">
@@ -74,14 +82,18 @@ export function Header() {
 
 						<div className="pt-4 space-x-2">
 							{actions.map((action, index) => (
-								<Button
+								<a
 									key={index}
-									variant={"outline"}
-									size={"sm"}
-									onClick={() => handleActionClick(action.link)}
+									href={action.link}
+									target={
+										action.link.startsWith("mailto:") ? "_self" : "_blank"
+									}
+									rel="noopener noreferrer"
 								>
-									{action.icon}
-								</Button>
+									<Button variant={"outline"} size={"sm"}>
+										{action.icon}
+									</Button>
+								</a>
 							))}
 						</div>
 					</div>
