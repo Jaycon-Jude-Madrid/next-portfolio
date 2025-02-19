@@ -18,6 +18,16 @@ export default function Profile() {
 		setShowBadges(!showBadges);
 	};
 
+	console.log(
+		"NEXT_PUBLIC_API_BASE_URL:",
+		process.env.NEXT_PUBLIC_API_BASE_URL
+	);
+
+	console.log(
+		"NEXT_PUBLIC_GEMINI_API_KEY:",
+		process.env.NEXT_PUBLIC_GEMINI_API_KEY
+	);
+
 	return (
 		<div className="grid gap-3 grid-cols-12 h-full">
 			{/* Left Column */}
